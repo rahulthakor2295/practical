@@ -8,7 +8,7 @@ part 'app_router.gr.dart';
 
 @AdaptiveAutoRouter(
   routes: [
-    AutoRoute(page: SplashScreen, ),
+    AutoRoute(page: SplashScreen, initial: true),
     AutoRoute(page: QrScanView),
     AutoRoute(page: BottomNavigation),
   ],

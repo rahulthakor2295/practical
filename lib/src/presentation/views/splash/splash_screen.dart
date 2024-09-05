@@ -23,28 +23,10 @@ class _SplashScreenState extends State<SplashScreen> {
     Timer(
         const Duration(seconds: 3),
         () => {
-              preferences.getBoolValue(keyIsIntro).then((isIntro) => {
-                    if (!isIntro){}
-                      // {appRouter.popAndPush(const IntroViewRoute())}
 
-                    else
-                      {
-                        preferences.getBoolValue(keyIsLogin).then((isLogin) => {
-                              if (isLogin)
-                                {
                                   appRouter.popAndPush( BottomNavigationRoute()),
-                                  preferences
-                                      .getSignInModel(keySaveSignInModel)
-                                      .then((data) => {
-                                            StaticData.tempToken = data?.token,
-                                            StaticData.loginData = data
-                                          })
-                                }
-                              else{}
-                                // {appRouter.popAndPush(LoginViewRoute())}
-                            }),
-                      }
-                  })
+
+
             });
 
     //

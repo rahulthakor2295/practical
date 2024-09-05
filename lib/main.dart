@@ -4,7 +4,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:oktoast/oktoast.dart';
 import 'package:practical/src/presentation/cubits/country/country_cubit.dart';
-
 import 'src/config/router/app_router.dart';
 import 'src/config/themes/app_theme.dart';
 import 'src/domain/repositories/api_repository.dart';
